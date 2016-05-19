@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MYRIADPRO-REGULAR';
+  src: url('../fonts/MYRIADPRO-REGULAR.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body.home {min-width: 1100px; background-color: #f2f2f2; font-family: 'Roboto-Regular'; font-size: 14px}
+.w1100 {width: 1100px; margin: auto}
+
+/*---------- Header ----------*/
+header {background-image: url(../images/home/bg_gradient.png); height: 140px; background-size: 100%}
+header .header {height: 100px; display: flex; align-items: center}
+header .options {margin-left: auto}
+header .options > div {float: left; margin-right: 30px; color: white}
+header .options > div a {display: flex; align-items: center}
+header .options i {padding: 6px 8px; border: 1px solid white; border-radius: 4px; font-size: 22px; margin-right: 5px}
+
+/*---------- Menu ----------*/
+nav {height: 40px; background-color: #0acaf4}
+nav > ul {line-height: 40px; height: 100%; margin-bottom: 0; font-size: 16px; text-transform: uppercase; width: 1100px; margin: auto; position: relative}
+nav > ul > li {float: left; color: white}
+nav > ul > li > a {display: flex; align-items: center; padding-right: 20px; padding-left: 20px}
+nav > ul > li.trangchu > a:before {content: ""; font-family: FontAwesome; display: inline-block; width: 25px; font-size: 18px;}
+nav > ul > li.trangchu > a:before {content: "\f015"}
+
+nav > ul > li.active, nav > ul > li:hover {background-color: white; color: #2a2a2a}
+nav > ul > li.active > a:before, nav > ul > li:hover > a:before {color: #f07321}
+
+nav ul li div.div_toogle {display: none; position: absolute; margin: 0 0 0 -30px; background-color: white; left: 0; padding: 40px 35px 25px 0; width: 90%; z-index: 10}
+nav ul li div.div_toogle div.first {float: left; padding: 0 25px 0 0; background: none; width: 65%; color: #2a2a2a !important; font-size: 14px}
+nav ul li div.div_toogle div.first > img {float: left; margin-right: 25px}
+nav ul li div.div_toogle div.first div.box {float: left; width: calc(100% - 239px)}
+nav ul li div.div_toogle div.first p, nav ul li div.div_toogle div.first a {line-height: normal; text-transform: none;}
+nav ul li div.div_toogle div.first p.title {font-family: 'Roboto-Bold'; font-size: 16px}
+nav ul li div.div_toogle div.first a.list_style {background: url(../images/home/list_style.png) 0 center no-repeat; padding-left: 25px; color: #3087c8 !important; text-decoration: underline !important}
+nav ul li div.div_toogle div.first .lb {font-family: 'Roboto-Bold'; padding-top: 6px; margin-bottom: 0}
+nav ul li div.div_toogle div.first p.dk {margin-bottom: 0px}
+nav ul li div.div_toogle div.first p.dk a {color: #3087c8 !important; text-decoration: underline !important}
+nav ul li div.div_toogle div.first p.forgot_pw a {background: url(../images/home/list_style.png) 0 center no-repeat; padding-left: 20px; color: #f17118 !important; text-decoration: underline !important}
+nav ul li div.div_toogle div.first button {background: url(../images/home/bg_dn.png) center center no-repeat transparent; width: 96px; height: 35px; border: 0; color: transparent;}
+nav ul li div.div_toogle ul, nav ul li div.div_toogle div.second {width: 32%; float: left; border-left: 1px solid #ccc; line-height: normal; text-transform: none; font-size: 14px}
+nav ul li div.div_toogle li {background: url(../images/home/list_style.png) 25px center no-repeat; padding-left: 50px; color: #3087c8; margin-bottom: 20px}
+nav ul li div.div_toogle div.second > p {padding-left: 25px; color: #2a2a2a !important}
+nav ul li div.div_toogle div.second > p:first-child {font-size: 16px}
+nav ul li:hover div.div_toogle {display:block;}
+
+/*---------- Footer ----------*/
+footer {height: 45px; display: flex; align-items: center; padding-left: 20px; background-image: url(../images/bg_gradient.png); color: white; background-size: 100% 100px}
+footer > p {margin-bottom: 0}
+footer > p span {font-family: 'Roboto-Bold'}
+footer > p:nth-child(2) {margin-left: auto; text-transform: uppercase;}
+
+
+
+
+
+/*---------- Main ----------*/
+.main {overflow: hidden;}
+.head_title {border-bottom: 2px solid #2587b4; font-family: 'MYRIADPRO-REGULAR'; font-size: 20px}
+.head_title p {margin-bottom: 0; background-color: #2587b4; display: inline-block; padding: 0 25px; line-height: 42px; color: white; border-radius: 8px 8px 0 0}
+.middle_ {display: flex; justify-content: center;}
+
+/*---- Middle part ----*/
+.middle_part {background: url(../images/home/bg_main.jpg) no-repeat center center; min-height: 490px; margin-bottom: 30px; display: flex; align-items: center;}
+.middle_part .w1100 {display: flex; justify-content: center;}
+.mInput {background-color: rgba(255,255,255,0.5); padding: 5px; border-radius: 5px}
+.mInput {margin-bottom: 20px}
+.mInput input {height: 52px; border-right: 0;}
+.mInput .input-group-addon {padding: 0 1px 0 0; background-color: white; border-left: 0}
+.middle_part ul {margin-bottom: 0}
+.middle_part ul li {display: inline-block;}
+.middle_part .label {padding: 4px 7px; font-weight: normal; background-color: #edebec; color: #4b4b4b; font-size: 14px}
+.middle_part .label.active {background-color: rgba(7, 8, 15, 0.8); color: white}
+
+/*---- 3 col ----*/
+.vbpq {}
+.vbpq ul {padding: 15px}
+.vbpq ul li {margin-bottom: 10px; background: url(../images/home/icon_vb.png) 0 center no-repeat; padding-left: 40px}
+.vbpq ul li span {font-family: 'Roboto-Bold'}
+.vbpq ul li a {display: block;}
+
+.hdsd {}
+.hdsd ul {padding: 15px}
+.hdsd ul li {margin-bottom: 10px; background: url(../images/home/icon_hd.png) no-repeat 0 center; padding-left: 30px}
+.hdsd ul li a {display: block;}
+
+.lienket_ngoai {}
+.lienket_ngoai ul {color: #177faf; padding: 15px}
+.lienket_ngoai ul li {margin-bottom: 10px}
+.lienket_ngoai ul li a {text-decoration: underline !important; display: block;}
+
+/*---- Đăng ký ----*/
+.dangky {display: flex; align-items: center; background: url(../images/home/bg_sub.jpg) no-repeat center center transparent; background-size: 100% 100%}
+.half_transparent {background-color: rgba(255,255,255,0.8); padding: 5px;}
+.dangky .half_transparent {margin: 20px auto; padding: 0px 20px 20px}
+.dangky .title  {border-bottom: 1px solid #acacac; font-size: 16px; color: #4b4b4b; margin-bottom: 20px; height: 44px; display: flex; align-items: center;}
+.dangky .title span {font-family: 'Roboto-Bold'}
+.dangky button.design_btn {margin-left: auto; background: url(../images/home/bg_button.png) repeat-x center center transparent; background-size: auto 100%; border-radius: 5px; border: 1px solid #acacac}
+.dangky input[type="text"], .dangky select {height: 21px; border: 1px solid #acacac}
+.fake_textarea {height: 87px; width: 100%; border: 1px solid #acacac; border-radius: 5px; background-color: white; padding: 0 10px; overflow-y: auto}

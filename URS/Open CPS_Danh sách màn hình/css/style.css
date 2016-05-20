@@ -98,7 +98,15 @@ footer > p:nth-child(2) {margin-left: auto; text-transform: uppercase;}
 .sm_table .sm_row:nth-child(even) {background-color: #ebebeb}
 .sm_row .sm_cell {}
 .sm_row .sm_cell.cell_1 {}
-.sm_row .sm_cell.cell_2 {margin-left: auto}
+.sm_row .sm_cell.cell_2, .sm_row .sm_cell.cell_3, .sm_row .sm_cell.cell_4, .sm_row .sm_cell.cell_5 {position: absolute; top: 7px;}
+.sm_row .sm_cell.cell_2 {right: 193px}
+.sm_row .sm_cell.cell_3 {right: 82px}
+.sm_row .sm_cell.cell_4 {right: 46px}
+.sm_row .sm_cell.cell_5 {right: 10px; top: 5px}
+.sm_row .sm_cell.cell_2 button, .sm_row .sm_cell.cell_3 button, .sm_row .sm_cell.cell_4 button, .sm_row .sm_cell.file_dk span {padding: 3px 9px; background-color: #177faf; border-radius: 5px; color: white !important; border: 0}
+.sm_row .sm_cell.cell_4 button, .sm_row .sm_cell.file_dk span {padding: 3px 6px}
+.sm_row .sm_cell.cell_5 i, .sm_row .sm_cell.delete i {font-size: 30px; color: #a94040}
+.sm_row .sm_cell.delete {line-height: 30px; margin-left: 15px}
 .sm_row .sm_cell.c_1, .sm_row .sm_cell.c_2, .sm_row .sm_cell.c_3, .sm_row .sm_cell.c_4 {line-height: 40px; padding-right: 10px}
 .sm_row .sm_cell.c_1 {width: 135px}
 .sm_row .sm_cell.c_2 {width: 330px}

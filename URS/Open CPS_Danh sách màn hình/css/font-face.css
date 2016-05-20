@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MYRIADPRO-REGULAR';
+  src: url('../fonts/MYRIADPRO-REGULAR.otf');
+  font-weight: normal;
+  font-style: normal;
+}

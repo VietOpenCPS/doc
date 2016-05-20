@@ -1,24 +1,3 @@
-@font-face {
-  font-family: 'Roboto-Regular';
-  src: url('../fonts/Roboto-Regular.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Roboto-Bold';
-  src: url('../fonts/Roboto-Bold.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'MYRIADPRO-REGULAR';
-  src: url('../fonts/MYRIADPRO-REGULAR.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
 body.home {min-width: 1100px; background-color: #f2f2f2; font-family: 'Roboto-Regular'; font-size: 14px}
 .w1100 {width: 1100px; margin: auto}
 
@@ -37,27 +16,8 @@ nav > ul > li {float: left; color: white}
 nav > ul > li > a {display: flex; align-items: center; padding-right: 20px; padding-left: 20px}
 nav > ul > li.trangchu > a:before {content: ""; font-family: FontAwesome; display: inline-block; width: 25px; font-size: 18px;}
 nav > ul > li.trangchu > a:before {content: "\f015"}
-
 nav > ul > li.active, nav > ul > li:hover {background-color: white; color: #2a2a2a}
 nav > ul > li.active > a:before, nav > ul > li:hover > a:before {color: #f07321}
-
-nav ul li div.div_toogle {display: none; position: absolute; margin: 0 0 0 -30px; background-color: white; left: 0; padding: 40px 35px 25px 0; width: 90%; z-index: 10}
-nav ul li div.div_toogle div.first {float: left; padding: 0 25px 0 0; background: none; width: 65%; color: #2a2a2a !important; font-size: 14px}
-nav ul li div.div_toogle div.first > img {float: left; margin-right: 25px}
-nav ul li div.div_toogle div.first div.box {float: left; width: calc(100% - 239px)}
-nav ul li div.div_toogle div.first p, nav ul li div.div_toogle div.first a {line-height: normal; text-transform: none;}
-nav ul li div.div_toogle div.first p.title {font-family: 'Roboto-Bold'; font-size: 16px}
-nav ul li div.div_toogle div.first a.list_style {background: url(../images/home/list_style.png) 0 center no-repeat; padding-left: 25px; color: #3087c8 !important; text-decoration: underline !important}
-nav ul li div.div_toogle div.first .lb {font-family: 'Roboto-Bold'; padding-top: 6px; margin-bottom: 0}
-nav ul li div.div_toogle div.first p.dk {margin-bottom: 0px}
-nav ul li div.div_toogle div.first p.dk a {color: #3087c8 !important; text-decoration: underline !important}
-nav ul li div.div_toogle div.first p.forgot_pw a {background: url(../images/home/list_style.png) 0 center no-repeat; padding-left: 20px; color: #f17118 !important; text-decoration: underline !important}
-nav ul li div.div_toogle div.first button {background: url(../images/home/bg_dn.png) center center no-repeat transparent; width: 96px; height: 35px; border: 0; color: transparent;}
-nav ul li div.div_toogle ul, nav ul li div.div_toogle div.second {width: 32%; float: left; border-left: 1px solid #ccc; line-height: normal; text-transform: none; font-size: 14px}
-nav ul li div.div_toogle li {background: url(../images/home/list_style.png) 25px center no-repeat; padding-left: 50px; color: #3087c8; margin-bottom: 20px}
-nav ul li div.div_toogle div.second > p {padding-left: 25px; color: #2a2a2a !important}
-nav ul li div.div_toogle div.second > p:first-child {font-size: 16px}
-nav ul li:hover div.div_toogle {display:block;}
 
 /*---------- Footer ----------*/
 footer {height: 45px; display: flex; align-items: center; padding-left: 20px; background-image: url(../images/bg_gradient.png); color: white; background-size: 100% 100px}
@@ -76,7 +36,7 @@ footer > p:nth-child(2) {margin-left: auto; text-transform: uppercase;}
 .middle_ {display: flex; justify-content: center;}
 
 /*---- Middle part ----*/
-.middle_part {background: url(../images/home/bg_main.jpg) no-repeat center center; min-height: 490px; margin-bottom: 30px; display: flex; align-items: center;}
+.middle_part {background: url(../images/home/bg_main.jpg) no-repeat center center; min-height: 490px; margin-bottom: 30px; display: flex; align-items: center; background-size: 100% 100%}
 .middle_part .w1100 {display: flex; justify-content: center;}
 .mInput {background-color: rgba(255,255,255,0.5); padding: 5px; border-radius: 5px}
 .mInput {margin-bottom: 20px}
@@ -111,5 +71,5 @@ footer > p:nth-child(2) {margin-left: auto; text-transform: uppercase;}
 .dangky .title  {border-bottom: 1px solid #acacac; font-size: 16px; color: #4b4b4b; margin-bottom: 20px; height: 44px; display: flex; align-items: center;}
 .dangky .title span {font-family: 'Roboto-Bold'}
 .dangky button.design_btn {margin-left: auto; background: url(../images/home/bg_button.png) repeat-x center center transparent; background-size: auto 100%; border-radius: 5px; border: 1px solid #acacac}
-.dangky input[type="text"], .dangky select {height: 21px; border: 1px solid #acacac}
+.dangky input[type="text"], .dangky select {height: 21px; border: 1px solid #acacac; font-size: 10px; padding: 2px 8px}
 .fake_textarea {height: 87px; width: 100%; border: 1px solid #acacac; border-radius: 5px; background-color: white; padding: 0 10px; overflow-y: auto}

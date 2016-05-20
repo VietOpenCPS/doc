@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css"  href="css/style_openCPS.css">
     <link rel="stylesheet" type="text/css"  href="css/support.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/font-face.css">
 
 	<!-- JS -->
 	<script src="js/jquery-1.11.3.js"></script>
@@ -46,59 +47,10 @@
 		<nav>
 			<ul>
 				<li class="trangchu"><a href="">Trang chủ</a></li>
-				<li class="thongbao">
-					<a href="">Thông báo</a>
-					<div class="div_toogle">						
-						<div class="row-eq-height">
-							<div class="first">
-								<img src="images/home/anh_thongbao.jpg">
-								<div class="box">
-									<p class="title"><a href="">Khởi động xây dựng Phần mềm lõi dịch vụ công nguồn mở OpenCPS</a></p>
-									<p>Hiện nay, các cơ quan chính quyền đặc biệt quan tâm đẩy mạnh cung cấp dịch vụ công trực tuyến nhằm tăng cường hiệu lực, hiệu quả của các đơn vị...</p>
-									<a class="list_style" href="">Xem chi tiết</a>
-								</div>
-							</div>
-							<ul>
-								<li><a href="">Giới thiệu OpenCPS với Cộng đồng mã nguồn mở thế giới</a></li>
-								<li><a href="">OpenCPS tích hợp Cổng thanh toán quốc gia KeyPay</a></li>
-								<li><a href="">Chia sẻ mô hình phát triển OpenCPS với VFOSSA</a></li>
-								<li><a href="">Phần mềm OpenCPS là gì?</a></li>
-							</ul>
-						</div>
-					</div>
-				</li>
+				<li class="thongbao"><a href="">Thông báo</a></li>
 				<li class="tthc"><a href="">Thủ tục hành chính</a></li>
 				<li class="active"><a href="">Đăng ký</a></li>
-				<li class="dangnhap">
-					<a href="">Đăng nhập</a>
-					<div class="div_toogle">
-						<div class="row-eq-height">
-							<div class="first">
-								<div class="col-sm-10 col-sm-offset-1 form-group">
-									<p class="col-sm-4 lb">Địa chỉ thư điện tử:</p>
-									<div class="col-sm-8"><input type="text" class="form-control"></div>
-								</div>
-								<div class="col-sm-10 col-sm-offset-1 form-group">
-									<p class="col-sm-4 lb">Mật khẩu:</p>
-									<div class="col-sm-8"><input type="text" class="form-control"></div>
-								</div>
-								<div class="col-sm-10 col-sm-offset-1">
-									<div class="col-sm-9">
-										<p class="dk">Nếu chưa có tài khoản vui lòng <a href="">đăng ký</a></p>
-										<p class="forgot_pw"><a href="">Quên mật khẩu</a></p>
-									</div>
-									<div class="col-sm-3">
-										<button class="btn pull-right">12345</button>
-									</div>
-								</div>
-							</div>
-							<div class="second">
-								<p class="title">Hướng dẫn</p>
-								<p>Đăng nhập vào hệ thống để nộp hồ sơ trực tuyến</p>
-							</div>
-						</div>
-					</div>
-				</li>
+				<li class="dangnhap"><a href="">Đăng nhập</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -134,11 +86,17 @@
 								<div class="col-sm-6 form-group">
 									<p>Loại hình tổ chức:</p>
 									<select class="form-control">
-										<option></option>
+										<option>Công ty Cổ phần</option>
+										<option>Công ty trách nhiệm hữu hạn hai thành viên trở lên</option>
+										<option>Doanh nghiệp Tư nhân</option>
+										<option>Công ty trách nhiệm hữu hạn một thành viên</option>
+										<option>Công ty hợp danh</option>
+										<option>Doanh nghiệp nhà nước</option>
+										<option>Hợp Tác Xã</option>
 									</select>
 								</div>
 								<div class="col-sm-12 form-group">
-									<p>Địa chỉ: <span class="red">*</span></p>
+									<p>Địa chỉ:</p>
 									<input class="form-control" type="text">
 								</div>
 							</div>
@@ -202,12 +160,12 @@
 					</div>
 					<div class="row form-group">
 						<div class="col-sm-3">
-							<p>Thư điện tử: <span class="red">*</span></p>
+							<p>Địa chỉ thư điện tử - Email: <span class="red">*</span></p>
 							<input class="form-control" type="text">
 						</div>					
 						<div class="col-sm-6 middle_">
 							<div class="col-sm-6" style="width:53%">
-								<p>Số điện thoại: <span class="red">*</span></p>
+								<p>Số điện thoại:</p>
 								<input class="form-control" type="text">
 							</div>
 						</div>
@@ -220,7 +178,7 @@
 					</div>
 					<div class="row form-group">
 						<div class="col-sm-3">
-							<p>Tên đại diện: <span class="red">*</span></p>
+							<p>Tên đại diện:</p>
 							<input class="form-control" type="text">
 						</div>					
 						<div class="col-sm-6 middle_">
@@ -237,8 +195,8 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-3">
-							<p>Tệp đính kèm: <span class="red">*</span></p>
+						<div class="col-sm-12">
+							<p>Giấy phép kinh doanh/Quyết định thành lập:</p>
 							<p><input type="file"></p>
 						</div>
 					</div>

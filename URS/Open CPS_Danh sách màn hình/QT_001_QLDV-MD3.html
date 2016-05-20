@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quản lý DVC cấp 3</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/support.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/font-face.css">
+
+	<!-- JS -->
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+    <!-- Sửa lỗi HTML5 cho IE 8 trở xuống -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<header>
+		<div class="header w1100">
+			<div class="logoH"><a href=""><img src="images/home/logoH.png"></a></div>
+			<div class="options">
+				<div class="opt MR30 count">
+					<a href="">
+						<i class="fa fa-inbox"></i>
+						Thông tin tài khoản
+					</a>
+					<span>3</span>
+				</div>
+				<div class="opt">
+					<a href="">
+						<i class="fa fa-power-off"></i>
+						Thoát
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<nav>
+			<ul>
+				<li class="trangchu"><a href="">Trang chủ</a></li>
+				<li><a href="">Dịch vụ công</a></li>
+				<li class="active"><a href="">Quản lý hồ sơ</a></li>
+				<li><a href="">Quản lý giấy tờ</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<article>
+		<div class="main two_col_canbo row-eq-height">
+			<div class="col_menu">
+				<div class="head_title"><p>Quản trị</p></div>
+				<div class="sm_table MR0">
+					<div class="sm_row lH40">Dịch vụ công mức 3</div>
+					<div class="sm_row lH40">Quy trình</div>
+					<div class="sm_row lH40">Quản lý dữ liệu danh mục</div>
+					<div class="sm_row lH40">Quản lý cán bộ</div>
+					<div class="sm_row lH40">Quản lý công dân, tổ chức</div>
+				</div>
+			</div>
+			<div class="col_content">
+				<div class="box full_width">
+					<div class="head_title MB25"><p>Quản lý dịch vụ công cấp 3</p></div>
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#hoso_cxl" role="tab" data-toggle="tab">Mẫu hồ sơ</a></li>
+						<li role="presentation"><a href="#hoso_mxl" role="tab" data-toggle="tab">Cấu hình dịch vụ công</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="hoso_cxl">
+							<div class="box_gray MB10">
+								<div class="col-sm-6 PAl0">
+									<button class="btn btn-primary"><i class="fa fa-plus MR5" aria-hidden="true"></i> Thêm hồ sơ</button>
+								</div>
+								<div class="col-sm-3 PAr0">
+									<div class="mSelect">
+										<select class="form-control">
+											<option>- Lọc theo trạng thái hồ sơ -</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-sm-3 PAr0 searchbox">
+									<div class="input-group">
+									    <input type="text" class="form-control" placeholder="Tìm kiếm ...">
+									    <div class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></div>
+								    </div>
+								</div>
+							</div>
+							<div class="condition_box MB10">
+								<div class="col-sm-3 PAb0" style="width:21%">
+									<div class="mSelect">
+										<select class="form-control">
+											<option>Các trang trên cổng 1 của 1</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-sm-3" style="width:20%">
+									<div class="mSelect">
+										<select class="form-control">
+											<option>20 bản ghi trên trang</option>
+										</select>
+									</div>
+								</div>
+								<p class="pull-left">hiển thị 3 kết quả</p>
+								<ul class="pagination pull-right">
+									<li>
+										<a href="#" aria-label="Previous">
+											<i class="fa fa-caret-left MR10" aria-hidden="true"></i>
+											Trước
+										</a>
+									</li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li>
+										<a href="#" aria-label="Next">
+											Sau
+											<i class="fa fa-caret-right ML10" aria-hidden="true"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<table class="table table-bordered mTable MB10">
+								<tr>
+									<th width="45">STT</th>
+									<th width="100">Số hồ sơ</th>
+									<th>Tên hồ sơ</th>
+									<th width="360">Mô tả</th>
+									<th width="85">Thao tác</th>
+								</tr>
+								<tr>
+									<td class="text-center">1</td>
+									<td class="text-center">1</td>
+									<td>Thông báo tập trung kinh tế.</td>
+									<td>Hồ sơ thủ tục Thông báo tập trung kinh tế</td>
+									<td class="text-center">
+										<a href="#" data-toggle="tooltip" title="Thay đổi" class="MR10"><img src="images/thaydoi.png"></a>
+										<a href="#" data-toggle="tooltip" title="Xóa"><img src="images/delete.png" style="width:16px"></a>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">2</td>
+									<td class="text-center">2</td>
+									<td>Cấp lại chứng chỉ an toàn.</td>
+									<td>Hồ sơ thủ tục đề nghị hưởng miễn trừ đối với tập trung kinh tế</td>
+									<td class="text-center">
+										<a href="#" data-toggle="tooltip" title="Thay đổi" class="MR10"><img src="images/thaydoi.png"></a>
+										<a href="#" data-toggle="tooltip" title="Xóa"><img src="images/delete.png" style="width:16px"></a>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">3</td>
+									<td class="text-center">3</td>
+									<td>Đăng ký sửa đổi/bổ sung nội dung chương trình khuyến mại mang tính may rủi.</td>
+									<td>Cấp lại chứng chỉ an toàn</td>
+									<td class="text-center">
+										<a href="#" data-toggle="tooltip" title="Thay đổi" class="MR10"><img src="images/thaydoi.png"></a>
+										<a href="#" data-toggle="tooltip" title="Xóa"><img src="images/delete.png" style="width:16px"></a>
+									</td>
+								</tr>
+							</table>
+							<div class="condition_box MB10">
+								<div class="col-sm-3 PAb0" style="width:21%">
+									<div class="mSelect">
+										<select class="form-control">
+											<option>Các trang trên cổng 1 của 1</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-sm-3" style="width:20%">
+									<div class="mSelect">
+										<select class="form-control">
+											<option>20 bản ghi trên trang</option>
+										</select>
+									</div>
+								</div>
+								<p class="pull-left">hiển thị 3 kết quả</p>
+								<ul class="pagination pull-right">
+									<li>
+										<a href="#" aria-label="Previous">
+											<i class="fa fa-caret-left MR10" aria-hidden="true"></i>
+											Trước
+										</a>
+									</li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li>
+										<a href="#" aria-label="Next">
+											Sau
+											<i class="fa fa-caret-right ML10" aria-hidden="true"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="hoso_mxl">Hồ sơ mới được xử lý ...</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<footer>
+		<p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2016 - Powered by <span>OpenCPS</span></p>
+		<p>
+			Phần mềm lõi dịch vụ công nguồn mở 
+			<img class="ML10" src="images/icon_footer.png">
+		</p>
+	</footer>
+</body>
+
+</html>

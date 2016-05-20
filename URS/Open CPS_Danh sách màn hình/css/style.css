@@ -33,7 +33,7 @@ footer > p:nth-child(2) {margin-left: auto; text-transform: uppercase;}
 .main {padding: 10px 15px 40px; overflow: hidden;}
 .box {}
 .head_title {border-bottom: 2px solid #2587b4; margin-bottom: 10px}
-.head_title p {margin-bottom: 0; background-color: #2587b4; display: inline-block; padding: 0 25px; font-weight: bold; line-height: 34px; color: white; border-radius: 8px 8px 0 0}
+.head_title p {margin-bottom: 0; background-color: #2587b4; display: inline-block; padding: 0 25px; font-family: 'Roboto-Bold'; line-height: 34px; color: white; border-radius: 8px 8px 0 0}
 .lH40 {line-height: 40px; height: 40px}
 .full_width {width: 100%}
 .box_gray {background-image: url(../images/bg_boxGray.png); height: 43px; background-size: auto 43px; padding: 5px 5px 0}
@@ -49,6 +49,8 @@ footer > p:nth-child(2) {margin-left: auto; text-transform: uppercase;}
 .col {float: left; padding: 0 15px}
 .col_main {width: calc(100% - 150px)}
 .col_sub {width: 150px; margin-top: 34px; background-color: #b9d8e7;}
+.col_menu {width: 260px;}
+.col_content {width: calc(100% - 275px); margin-left: auto}
 
 /*---- Khu lựa chọn các khung select, datetime ... ----*/
 .condition_box {overflow: hidden; margin-bottom: 30px}

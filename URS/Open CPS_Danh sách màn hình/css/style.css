@@ -45,6 +45,7 @@ footer > p:nth-child(2) {margin-left: auto; text-transform: uppercase;}
 .main.two_col {}
 
 /*---- Các cột tự định nghĩa ----*/
+.reverse_row {margin-right: 15px !important; margin-left: 15px !important}
 .col {float: left; padding: 0 15px}
 .col_main {width: calc(100% - 150px)}
 .col_sub {width: 150px; margin-top: 34px; background-color: #b9d8e7;}
@@ -59,7 +60,7 @@ footer > p:nth-child(2) {margin-left: auto; text-transform: uppercase;}
 .searchbox input[type="text"]::-moz-placeholder {font-style: italic; opacity: 1}
 .searchbox input[type="text"]:-ms-input-placeholder {font-style: italic;}
 .mSelect {position: relative; background-color: white}
-.mSelect select {-webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: transparent; position: relative; z-index: 5; padding: 6px 8px;}
+.mSelect select {-webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: transparent; position: relative; z-index: 5; padding: 6px 8px}
 .mSelect:before {content: "\f0d7"; font-family: FontAwesome; font-size:16px; width: 30px; height: 34px; position: absolute; top: 0; right: 0px; background: url(../images/bg_searchBtn.png) center center; border-radius: 0 4px 4px 0; line-height: 34px; text-align: center; color: #424242; background-size: auto 100%}
 
 /*---- Table ----*/

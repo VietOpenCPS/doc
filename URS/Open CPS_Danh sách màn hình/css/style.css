@@ -77,10 +77,10 @@ footer > p:nth-child(2) {margin-left: auto; text-transform: uppercase;}
 
 /*---- Sub menu ----*/
 .sub_menu {}
-.sub_menu li {height: 33px; background-color: #479ac0; border-bottom: 1px solid #c1f0f8; color: white}
-.sub_menu li a {display: block; line-height: 33px; padding: 0 13px}
+.sub_menu li {background-color: #479ac0; border-bottom: 1px solid #c1f0f8; color: white}
+.sub_menu li a {display: block; padding: 7px 13px}
 .sub_menu li:hover {background-color: #2fcde9}
-.sub_menu li:first-child {background-color: #177faf; font-weight: bold; display: flex; align-items: center; justify-content: center; height: 60px}
+.sub_menu li:first-child {background-color: #177faf; font-family: 'Roboto-Bold'; display: flex; align-items: center; justify-content: center; height: 60px}
 .sub_menu li:first-child p {margin-bottom: 0}
 .sub_menu li:first-child p span {text-transform: uppercase;}
 .sub_menu li i {font-size: 16px; margin-right: 3px}

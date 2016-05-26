@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CB - Chi tiết hồ sơ</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/support.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/font-face.css">
+
+	<!-- JS -->
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+    <!-- Sửa lỗi HTML5 cho IE 8 trở xuống -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<header>
+		<div class="header w1100">
+			<div class="logoH"><a href=""><img src="images/home/logoH.png"></a></div>
+			<div class="options">
+				<div class="opt MR30 count">
+					<a href="">
+						<i class="fa fa-inbox"></i>
+						Thông tin tài khoản
+					</a>
+					<span>3</span>
+				</div>
+				<div class="opt">
+					<a href="">
+						<i class="fa fa-power-off"></i>
+						Thoát
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<nav>
+			<ul>
+				<li class="trangchu"><a href="">Trang chủ</a></li>
+				<li><a href="">Dịch vụ công</a></li>
+				<li class="active"><a href="">Quản lý hồ sơ</a></li>
+				<li><a href="">Quản lý giấy tờ</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<article>
+		<div class="main two_col">
+			<div class="box col col_main PA0">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#hoso_cxl" role="tab" data-toggle="tab">Hồ sơ chờ xử lý</a></li>
+					<li role="presentation"><a href="#hoso_mxl" role="tab" data-toggle="tab">Hồ sơ mới được xử lý</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="hoso_cxl">
+						<div class="MR30">
+							<table class="table table-bordered mTable">
+								<tr>
+									<th>Hồ sơ số</th>
+									<th>123456789</th>
+								</tr>
+								<tr>
+									<td>Thủ tục</td>
+									<td>Thủ tục ABC</td>
+								</tr>
+								<tr>
+									<td>Chủ hồ sơ</td>
+									<td>Nguyễn Văn A</td>
+								</tr>
+								<tr>
+									<td>Địa chỉ</td>
+									<td>Số 345 Ngõ 675 đường Lạc Long Quân, quận Cầu Giấy, Hà Nội</td>
+								</tr>
+								<tr>
+									<td>Người liên hệ</td>
+									<td>Nguyễn Thị B</td>
+								</tr>
+								<tr>
+									<td>Điện thoại</td>
+									<td>0123456789</td>
+								</tr>
+								<tr>
+									<td>Ngày tiếp nhận</td>
+									<td>DD/MM/YYYY</td>
+								</tr>
+								<tr>
+									<td>Ngày hoàn thành</td>
+									<td>DD/MM/YYYY</td>
+								</tr>
+								<tr>
+									<td>Người liên hệ</td>
+									<td>Nguyễn Thị B</td>
+								</tr><tr>
+									<td>Trạng thái hồ sơ</td>
+									<td>Đang xử lý</td>
+								</tr>
+								<tr>
+									<td>Ngày cập nhật</td>
+									<td>DD/MM/YYYY</td>
+								</tr>
+								<tr>
+									<td>Ghi chú hồ sơ</td>
+									<td>Chờ bổ sung bản photo công chứng giấy tờ ABC</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="hoso_mxl">Hồ sơ mới được xử lý ...</div>
+				</div>
+			</div>
+			<div class="box col col_sub PA0">
+				<ul class="sub_menu">
+					<li>
+						<i class="fa fa-suitcase" aria-hidden="true"></i>
+						<p>
+							<span>Hồ sơ số</span><br/>
+							123456789
+						</p>
+					</li>
+					<li class="active">
+						<a href="">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+							<span>Thông tin hồ sơ</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-inbox" aria-hidden="true"></i>
+							<span>Nội dung hồ sơ</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<span>Xử lý hồ sơ</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+							<span>Lịch sử xử lý</span>
+						</a>
+					</li>
+				</ul>
+				<div class="text-center MB15">
+					<button class="btn btn-primary btn-sm">Quay lại</button>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<footer>
+		<p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2016 - Powered by <span>OpenCPS</span></p>
+		<p>
+			Phần mềm lõi dịch vụ công nguồn mở 
+			<img class="ML10" src="images/icon_footer.png">
+		</p>
+	</footer>
+</body>
+
+</html>

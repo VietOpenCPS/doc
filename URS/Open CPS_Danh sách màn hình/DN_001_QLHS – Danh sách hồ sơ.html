@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quản lý hồ sơ</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/support.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/font-face.css">
+
+	<!-- JS -->
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+    <!-- Sửa lỗi HTML5 cho IE 8 trở xuống -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<header>
+		<div class="header w1100">
+			<div class="logoH"><a href=""><img src="images/home/logoH.png"></a></div>
+			<div class="options">
+				<div class="opt MR30 count">
+					<a href="">
+						<i class="fa fa-inbox"></i>
+						Thông tin tài khoản
+					</a>
+					<span>3</span>
+				</div>
+				<div class="opt">
+					<a href="">
+						<i class="fa fa-power-off"></i>
+						Thoát
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<nav>
+			<ul>
+				<li class="trangchu"><a href="">Trang chủ</a></li>
+				<li><a href="">Dịch vụ công</a></li>
+				<li class="active"><a href="">Quản lý hồ sơ</a></li>
+				<li><a href="">Quản lý giấy tờ</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<article>
+		<div class="main one_col">
+			<div class="box">
+				<div class="head_title"><p>Hồ sơ</p></div>
+				<div class="box_gray MB10">
+					<div class="col-sm-6 PAl0">
+						<button class="btn btn-primary"><i class="fa fa-plus MR5" aria-hidden="true"></i> Chọn thủ tục nộp hồ sơ</button>
+					</div>
+					<div class="col-sm-3 PAr0">
+						<div class="mSelect">
+							<select class="form-control">
+								<option>- Lọc theo trạng thái hồ sơ -</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-3 PAr0 searchbox">
+						<div class="input-group">
+						    <input type="text" class="form-control" placeholder="Tìm kiếm ...">
+						    <div class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></div>
+					    </div>
+					</div>
+				</div>
+				<div class="condition_box MB10">
+					<div class="col-sm-2 PAb0">
+						<div class="mSelect">
+							<select class="form-control">
+								<option>Các trang trên cổng 1 của 1</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="mSelect">
+							<select class="form-control">
+								<option>20 bản ghi trên trang</option>
+							</select>
+						</div>
+					</div>
+					<p class="pull-left">hiển thị 3 kết quả</p>
+					<ul class="pagination pull-right">
+						<li>
+							<a href="#" aria-label="Previous">
+								<i class="fa fa-caret-left MR10" aria-hidden="true"></i>
+								Trước
+							</a>
+						</li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+								Sau
+								<i class="fa fa-caret-right ML10" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<table class="table table-bordered mTable MB10">
+					<tr>
+						<th width="40">Số</th>
+						<th width="80">Ngày tạo</th>
+						<th>Thủ tục</th>
+						<th width="170">Cơ quan</th>
+						<th width="135">Trạng thái hồ sơ</th>
+						<th width="130">Ngày tiếp nhận</th>
+						<th width="110">Số tiếp nhận</th>
+						<th width="85">Thao tác</th>
+					</tr>
+					<tr>
+						<td>308</td>
+						<td>19/05/2016<br/>09:08:07</td>
+						<td>Xác nhận đăng ký thực hiện khuyến mại theo hình thức mang tính may rủi thực hiện trên địa bàn 01 tỉnh, thành phố trực thuộc Trung ương.</td>
+						<td>Cục Xúc tiến thương mại</td>
+						<td>Mới</td>
+						<td></td>
+						<td></td>
+						<td>
+							<a href="#" data-toggle="tooltip" title="Xem" class="MR5"><img src="images/xem.png"></a>
+							<a href="#" data-toggle="tooltip" title="Sửa" class="MR5"><img src="images/thaydoi.png"></a>
+							<a href="#" data-toggle="tooltip" title="Gửi"><img src="images/send.png"></a>
+						</td>
+					</tr>
+					<tr>
+						<td>308</td>
+						<td>19/05/2016<br/>09:08:07</td>
+						<td>Xác nhận đăng ký thực hiện khuyến mại theo hình thức mang tính may rủi thực hiện trên địa bàn từ 2 tỉnh, thành phố trực thuộc Trung ương trở lên hoặc theo quy định tại Điều 17 NĐ số 37/2006/NĐ-CP.</td>
+						<td>Cục Xúc tiến thương mại</td>
+						<td>Mới</td>
+						<td></td>
+						<td></td>
+						<td>
+							<a href="#" data-toggle="tooltip" title="Xem" class="MR5"><img src="images/xem.png"></a>
+							<a href="#" data-toggle="tooltip" title="Sửa" class="MR5"><img src="images/thaydoi.png"></a>
+							<a href="#" data-toggle="tooltip" title="Gửi"><img src="images/send.png"></a>
+						</td>
+					</tr>
+					<tr>
+						<td>308</td>
+						<td>19/05/2016<br/>09:08:07</td>
+						<td>Thủ tục cấp Giấy phép thành lập Văn phòng đại diện của Tổ chức Xúc tiến thương mại nước ngoài tại Việt Nam.</td>
+						<td>Cục Xúc tiến thương mại</td>
+						<td>Mới</td>
+						<td></td>
+						<td></td>
+						<td>
+							<a href="#" data-toggle="tooltip" title="Xem" class="MR5"><img src="images/xem.png"></a>
+							<a href="#" data-toggle="tooltip" title="Sửa" class="MR5"><img src="images/thaydoi.png"></a>
+							<a href="#" data-toggle="tooltip" title="Gửi"><img src="images/send.png"></a>
+						</td>
+					</tr>
+				</table>
+				<div class="condition_box MB10">
+					<div class="col-sm-2 PAb0">
+						<div class="mSelect">
+							<select class="form-control">
+								<option>Các trang trên cổng 1 của 1</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="mSelect">
+							<select class="form-control">
+								<option>20 bản ghi trên trang</option>
+							</select>
+						</div>
+					</div>
+					<p class="pull-left">hiển thị 3 kết quả</p>
+					<ul class="pagination pull-right">
+						<li>
+							<a href="#" aria-label="Previous">
+								<i class="fa fa-caret-left MR10" aria-hidden="true"></i>
+								Trước
+							</a>
+						</li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+								Sau
+								<i class="fa fa-caret-right ML10" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<footer>
+		<p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2016 - Powered by <span>OpenCPS</span></p>
+		<p>
+			Phần mềm lõi dịch vụ công nguồn mở 
+			<img class="ML10" src="images/icon_footer.png">
+		</p>
+	</footer>
+</body>
+
+</html>

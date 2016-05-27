@@ -1,0 +1,116 @@
+body {min-width: 1100px; font-family: 'Roboto-Regular'}
+.w1100 {width: 1100px; margin: auto}
+
+/*---------- Header ----------*/
+header {background-image: url(../images/bg_gradient.png); background-size: 100% 100px}
+header .header {height: 100px; display: flex; align-items: center; padding: 0 30px 0 20px}
+header .logo {float: left;}header .options {float: right; color: white; margin-left: auto}
+header .options .opt {display: inline-block;}
+header .options .count {position: relative;}
+header .options .count span {position: absolute; padding: 3px 6px; background-color: red; border-radius: 50%; line-height: 14px; font-size: 12px; left: 22px; top: -12px;}
+header .options .opt i {padding: 6px 8px; border: 1px solid white; border-radius: 4px; font-size: 18px; margin-right: 5px}
+
+/*---------- Menu ----------*/
+nav {height: 40px; background-color: #0acaf4}
+nav > ul {line-height: 40px; height: 100%; margin-bottom: 0; font-size: 16px; text-transform: uppercase; width: 1100px; margin: auto; position: relative}
+nav > ul > li {float: left; color: white}
+nav > ul > li > a {display: flex; align-items: center; padding-right: 20px; padding-left: 20px}
+nav > ul > li.trangchu > a:before {content: ""; font-family: FontAwesome; display: inline-block; width: 25px; font-size: 18px;}
+nav > ul > li.trangchu > a:before {content: "\f015"}
+nav > ul > li.active, nav > ul > li:hover {background-color: white; color: #2a2a2a}
+nav > ul > li.active > a:before, nav > ul > li:hover > a:before {color: #f07321}
+
+/*---------- Footer ----------*/
+footer {height: 45px; display: flex; align-items: center; padding-left: 20px; background-image: url(../images/bg_gradient.png); color: white; background-size: 100% 100px}
+footer > p {margin-bottom: 0}
+footer > p:nth-child(2) {margin-left: auto; text-transform: uppercase;}
+
+
+
+
+
+/*---------- Main ----------*/
+.main {padding: 10px 15px 40px; overflow: hidden;}
+.box {}
+.head_title {border-bottom: 2px solid #2587b4; margin-bottom: 10px}
+.head_title p {margin-bottom: 0; background-color: #2587b4; display: inline-block; padding: 0 25px; font-family: 'Roboto-Bold'; line-height: 34px; color: white; border-radius: 8px 8px 0 0}
+.lH40 {line-height: 40px; height: 40px}
+.full_width {width: 100%}
+.box_gray {background-image: url(../images/bg_boxGray.png); height: 43px; background-size: auto 43px; padding: 5px 5px 0}
+.sSmall_btn {background-color: #177faf; padding: 3px 6px; font-size: 12px}
+.error {color: #ec3a3a; font-weight: bold}
+
+/*---- Class tướng ứng cho layout có menu phụ hay không ----*/
+.main.one_col {}
+.main.two_col {}
+
+/*---- Các cột tự định nghĩa ----*/
+.reverse_row {margin-right: 15px !important; margin-left: 15px !important}
+.col {float: left; padding: 0 15px}
+.col_main {width: calc(100% - 150px)}
+.col_sub {width: 150px; margin-top: 34px; background-color: #b9d8e7;}
+.col_menu {width: 260px;}
+.col_content {width: calc(100% - 275px); margin-left: auto}
+
+/*---- Khu lựa chọn các khung select, datetime ... ----*/
+.condition_box {overflow: hidden; margin-bottom: 30px}
+.condition_box .pagination {margin: 0}
+.condition_box > p {margin: 8px 0 0}
+.searchbox .input-group-addon {background-image: url(../images/bg_searchBtn.png); background-size: auto 100%}
+.searchbox input[type="text"]::-webkit-input-placeholder {font-style: italic;}
+.searchbox input[type="text"]:-moz-placeholder {font-style: italic; opacity: 1}
+.searchbox input[type="text"]::-moz-placeholder {font-style: italic; opacity: 1}
+.searchbox input[type="text"]:-ms-input-placeholder {font-style: italic;}
+.mSelect {position: relative; background-color: white}
+.mSelect select {-webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: transparent; position: relative; z-index: 5; padding: 6px 8px}
+.mSelect:before {content: "\f0d7"; font-family: FontAwesome; font-size:16px; width: 30px; height: 34px; position: absolute; top: 0; right: 0px; background: url(../images/bg_searchBtn.png) center center; border-radius: 0 4px 4px 0; line-height: 34px; text-align: center; color: #424242; background-size: auto 100%}
+
+/*---- Table ----*/
+.mTable {}
+.mTable th {color: white; background-color: #177faf; font-family: 'Roboto-Bold'; font-weight: normal;}
+.mTable th, .mTable td {vertical-align: middle !important}
+
+/*---- Pagination ----*/
+.pagination {margin: 10px 0}
+.pagination > li > a, .pagination > li > span, .pagination > li > a:focus {background-color: #177faf; color: white !important;}
+.pagination > .active > a, .pagination > li > a:hover {border-color: #ddd; background-color: #1d94cb;}
+
+/*---- Sub menu ----*/
+.sub_menu {}
+.sub_menu li {background-color: #479ac0; border-bottom: 1px solid #c1f0f8; color: white}
+.sub_menu li a {display: block; padding: 7px 13px}
+.sub_menu li:hover {background-color: #2fcde9}
+.sub_menu li:first-child {background-color: #177faf; font-family: 'Roboto-Bold'; display: flex; align-items: center; justify-content: center; height: 60px}
+.sub_menu li:first-child p {margin-bottom: 0}
+.sub_menu li:first-child p span {text-transform: uppercase;}
+.sub_menu li i {font-size: 16px; margin-right: 3px}
+.sub_menu li:first-child i {padding: 7px; font-size: 20px; border: 1px solid white; border-radius: 5px; margin-right: 10px}
+.sub_menu li.active {background-color: #2fcde9}
+
+/*---- Menu tabs ----*/
+.nav-tabs {border-bottom: 2px solid #2587b4; margin-bottom: 10px}
+.nav-tabs > li {margin-bottom: 0; font-weight: bold;}
+.nav-tabs > li > a {margin-right: 3px; border: 1px solid #b0b0b0; background-color: #dadada; color: #616161 !important; padding: 6px 15px; font-weight: normal; font-family: 'Roboto-Bold'}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .nav-tabs > li > a:hover {border: 1px solid #2587b4; background-color: #2587b4; color: white !important}
+
+/*---- Sub table ----*/
+.sm_table {margin-right: 30px}
+.sm_row {overflow: hidden; display: flex; align-items: center; padding-left: 10px; padding-right: 10px; position: relative;}
+.sm_row.odd {}
+.sm_table .sm_row:nth-child(even) {background-color: #ebebeb}
+.sm_row .sm_cell {}
+.sm_row .sm_cell.cell_1 {}
+.sm_row .sm_cell.cell_2, .sm_row .sm_cell.cell_3, .sm_row .sm_cell.cell_4, .sm_row .sm_cell.cell_5 {position: absolute; top: 7px;}
+.sm_row .sm_cell.cell_2 {right: 193px}
+.sm_row .sm_cell.cell_3 {right: 82px}
+.sm_row .sm_cell.cell_4 {right: 46px}
+.sm_row .sm_cell.cell_5 {right: 10px; top: 5px}
+.sm_row .sm_cell.cell_2 button, .sm_row .sm_cell.cell_3 button, .sm_row .sm_cell.cell_4 button, .sm_row .sm_cell.file_dk span {padding: 3px 9px; background-color: #177faf; border-radius: 5px; color: white !important; border: 0}
+.sm_row .sm_cell.cell_4 button, .sm_row .sm_cell.file_dk span {padding: 3px 6px}
+.sm_row .sm_cell.cell_5 i, .sm_row .sm_cell.delete i {font-size: 30px; color: #a94040}
+.sm_row .sm_cell.delete {line-height: 30px; margin-left: 15px}
+.sm_row .sm_cell.c_1, .sm_row .sm_cell.c_2, .sm_row .sm_cell.c_3, .sm_row .sm_cell.c_4 {line-height: 40px; padding-right: 10px}
+.sm_row .sm_cell.c_1 {width: 135px}
+.sm_row .sm_cell.c_2 {width: 330px}
+.sm_row .sm_cell.c_3 {width: 140px}
+.sm_row .sm_cell.c_4 {}

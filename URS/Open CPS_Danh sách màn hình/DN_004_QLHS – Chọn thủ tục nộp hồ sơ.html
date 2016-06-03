@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Danh sách TTHC</title>
+    <title>CB - Tạo mới hồ sơ</title>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css"  href="css/style.css">
@@ -47,7 +47,7 @@
 
 		<nav>
 			<ul>
-				<li class="trangchu"><a href="">Trang chủ</a></li>
+				<li><a href="">Trang chủ</a></li>
 				<li><a href="">Dịch vụ công</a></li>
 				<li class="active"><a href="">Quản lý hồ sơ</a></li>
 				<li><a href="">Quản lý giấy tờ</a></li>
@@ -58,118 +58,171 @@
 	<article>
 		<div class="main one_col">
 			<div class="box">
-				<div class="head_title">
-					<p>
-						<a href="" style="">
-							<span class="fa-stack" style="margin-left:-10px; margin-top:-2px">
-								<i class="fa fa-circle-thin fa-stack-2x fs20" style="top:4px; left:1px"></i>
-								<i class="fa fa-angle-left fa-stack-1x"></i>
-							</span>
-						</a>
-						Danh sách thủ tục hành chính
-					</p>
-				</div>
-				<div class="condition_box MB10">
-					<div class="col-sm-2 PAb0">
-						<div class="mSelect">
-							<select class="form-control">
-								<option>Các trang trên cổng 1 của 1</option>
-							</select>
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#hoso" role="tab" data-toggle="tab">Hồ sơ</a></li>
+					<li role="presentation"><a href="#giayto" role="tab" data-toggle="tab">Giấy tờ</a></li>
+					<li role="presentation"><a href="#hoso_ngoai" role="tab" data-toggle="tab">Hồ sơ ngoài</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="hoso">
+						<label>Danh sách các thủ tục được xử lý gần đây:</label>
+
+						<table class="table table-bordered mTable MT10">
+							<tr>
+								<th width="30" class="text-center">STT</th>
+								<th>Thủ tục hành chính</th>
+								<th width="110">Lĩnh vực</th>
+								<th>Cơ quan thực hiện</th>
+								<th width="100">Hành động</th>
+							</tr>
+							<tr>
+								<td class="text-center">1</td>
+								<td>Thủ tục abc</td>
+								<td>Lĩnh vực 1</td>
+								<td>Cơ quan A</td>
+								<td>
+									<a class="case-1" href="" data-toggle="tooltip" title="Tạo mới hồ sơ"><img src="images/taomoi.png"></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">1</td>
+								<td>Thủ tục abc</td>
+								<td>Lĩnh vực 1</td>
+								<td>Cơ quan A</td>
+								<td>
+									<a class="case-1" href="" data-toggle="tooltip" title="Tạo mới hồ sơ"><img src="images/taomoi.png"></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">1</td>
+								<td>Thủ tục abc</td>
+								<td>Lĩnh vực 1</td>
+								<td>Cơ quan A</td>
+								<td>
+									<a class="case-1" href="" data-toggle="tooltip" title="Tạo mới hồ sơ"><img src="images/taomoi.png"></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">1</td>
+								<td>Thủ tục abc</td>
+								<td>Lĩnh vực 1</td>
+								<td>Cơ quan A</td>
+								<td>
+									<a class="case-1" href="" data-toggle="tooltip" title="Tạo mới hồ sơ"><img src="images/taomoi.png"></a>
+								</td>
+							</tr>
+						</table>
+
+						<div class="condition_box row">
+							<div class="col-sm-4">
+								<div class="mSelect">
+									<select class="form-control">
+										<option>- Lọc theo lĩnh vực thủ tục -</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="mSelect">
+									<select class="form-control">
+										<option>- Lọc theo cấp hành chính -</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="input-group">
+								    <input type="text" class="form-control input-sm" placeholder="- Nhập từ khóa tìm kiếm -">
+								    <div class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></div>
+							    </div>
+							</div>
+						</div>
+
+						<table class="table table-bordered mTable">
+							<tr>
+								<th width="30" class="text-center">STT</th>
+								<th>Thủ tục hành chính</th>
+								<th width="110">Lĩnh vực</th>
+								<th>Cơ quan thực hiện</th>
+								<th width="100">Hành động</th>
+							</tr>
+							<tr>
+								<td class="text-center">1</td>
+								<td>Thủ tục abc</td>
+								<td>Lĩnh vực 1</td>
+								<td>Cơ quan A</td>
+								<td>
+									<a class="case-1" href="" data-toggle="tooltip" title="Tạo mới hồ sơ"><img src="images/taomoi.png"></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">1</td>
+								<td>Thủ tục abc</td>
+								<td>Lĩnh vực 1</td>
+								<td>Cơ quan A</td>
+								<td>
+									<a class="case-1" href="" data-toggle="tooltip" title="Tạo mới hồ sơ"><img src="images/taomoi.png"></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">1</td>
+								<td>Thủ tục abc</td>
+								<td>Lĩnh vực 1</td>
+								<td>Cơ quan A</td>
+								<td>
+									<a class="case-1" href="" data-toggle="tooltip" title="Tạo mới hồ sơ"><img src="images/taomoi.png"></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">1</td>
+								<td>Thủ tục abc</td>
+								<td>Lĩnh vực 1</td>
+								<td>Cơ quan A</td>
+								<td>
+									<a class="case-1" href="" data-toggle="tooltip" title="Tạo mới hồ sơ"><img src="images/taomoi.png"></a>
+								</td>
+							</tr>
+						</table>
+
+						<div class="condition_box MB20">
+							<div class="col-sm-2 PAb0">
+								<div class="mSelect">
+									<select class="form-control">
+										<option>Các trang trên cổng 1 của 1</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="mSelect">
+									<select class="form-control">
+										<option>20 bản ghi trên trang</option>
+									</select>
+								</div>
+							</div>
+							<p class="pull-left">hiển thị 3 kết quả</p>
+							<ul class="pagination pull-right">
+								<li>
+									<a href="#" aria-label="Previous">
+										<i class="fa fa-long-arrow-left" aria-hidden="true"></i>   
+										Đầu tiên
+									</a>
+								</li>
+								<li><a href="#">Trước</a></li>
+								<li><a href="#">Sau</a></li>
+								<li>
+									<a href="#" aria-label="Next">
+										Cuối cùng   
+										<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="MB10">
+							<button class="btn btn-primary">Quay lại</button>
 						</div>
 					</div>
-					<div class="col-sm-2">
-						<div class="mSelect">
-							<select class="form-control">
-								<option>20 bản ghi trên trang</option>
-							</select>
-						</div>
-					</div>
-					<p class="pull-left">hiển thị 3 kết quả</p>
-					<ul class="pagination pull-right">
-						<li>
-							<a href="#" aria-label="Previous">
-								<i class="fa fa-caret-left MR10" aria-hidden="true"></i>
-								Trước
-							</a>
-						</li>
-						<li class="active"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li>
-							<a href="#" aria-label="Next">
-								Sau
-								<i class="fa fa-caret-right ML10" aria-hidden="true"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<table class="table table-bordered mTable MB10">
-					<tr>
-						<th width="40">Số</th>
-						<th>Thủ tục</th>
-						<th width="170">Lĩnh vực</th>
-						<th width="160">Cơ quan</th>
-						<th width="80" class="text-center">Thao tác</th>
-					</tr>
-					<tr>
-						<td>308</td>
-						<td>Xác nhận đăng ký thực hiện khuyến mại theo hình thức mang tính may rủi thực hiện trên địa bàn 01 tỉnh, thành phố trực thuộc Trung ương.</td>
-						<td>Xúc tiến thương mại</td>
-						<td>Cục Xúc tiến thương mại</td>
-						<td class="text-center"><button class="btn btn-primary sSmall_btn">Chọn</button></td>
-					</tr>
-					<tr>
-						<td>308</td>
-						<td>Xác nhận đăng ký thực hiện khuyến mại theo hình thức mang tính may rủi thực hiện trên địa bàn từ 2 tỉnh, thành phố trực thuộc Trung ương trở lên hoặc theo quy định tại Điều 17 NĐ số 37/2006/NĐ-CP.</td>
-						<td>Xúc tiến thương mại</td>
-						<td>Cục Xúc tiến thương mại</td>
-						<td class="text-center"><button class="btn btn-primary sSmall_btn">Chọn</button></td>
-					</tr>
-					<tr>
-						<td>308</td>
-						<td>Thủ tục cấp Giấy phép thành lập Văn phòng đại diện của Tổ chức Xúc tiến thương mại nước ngoài tại Việt Nam.</td>
-						<td>Xúc tiến thương mại</td>
-						<td>Cục Xúc tiến thương mại</td>
-						<td class="text-center"><button class="btn btn-primary sSmall_btn">Chọn</button></td>
-					</tr>
-				</table>
-				<div class="condition_box MB10">
-					<div class="col-sm-2 PAb0">
-						<div class="mSelect">
-							<select class="form-control">
-								<option>Các trang trên cổng 1 của 1</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="mSelect">
-							<select class="form-control">
-								<option>20 bản ghi trên trang</option>
-							</select>
-						</div>
-					</div>
-					<p class="pull-left">hiển thị 3 kết quả</p>
-					<ul class="pagination pull-right">
-						<li>
-							<a href="#" aria-label="Previous">
-								<i class="fa fa-caret-left MR10" aria-hidden="true"></i>
-								Trước
-							</a>
-						</li>
-						<li class="active"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li>
-							<a href="#" aria-label="Next">
-								Sau
-								<i class="fa fa-caret-right ML10" aria-hidden="true"></i>
-							</a>
-						</li>
-					</ul>
+					<div role="tabpanel" class="tab-pane" id="giayto">Giấy tờ ...</div>
+					<div role="tabpanel" class="tab-pane" id="hoso_ngoai">Hồ sơ ngoài ...</div>
 				</div>
 			</div>
 		</div>

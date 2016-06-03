@@ -63,12 +63,19 @@ footer > p:nth-child(2) {margin-left: auto; text-transform: uppercase;}
 .searchbox input[type="text"]:-ms-input-placeholder {font-style: italic;}
 .mSelect {position: relative; background-color: white}
 .mSelect select {-webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: transparent; position: relative; z-index: 5; padding: 6px 8px}
-.mSelect:before {content: "\f0d7"; font-family: FontAwesome; font-size:16px; width: 30px; height: 34px; position: absolute; top: 0; right: 0px; background: url(../images/bg_searchBtn.png) center center; border-radius: 0 4px 4px 0; line-height: 34px; text-align: center; color: #424242; background-size: auto 100%}
+.mSelect:before {content: "\f0d7"; font-family: FontAwesome; font-size:16px; width: 30px; height: 34px; position: absolute; top: 0; right: 0px; background-color: #177faf; border-radius: 0 6px 6px 0; line-height: 34px; text-align: center; color: white}
+.condition_box .input-group-addon {background-color: #177faf; color: white}
 
 /*---- Table ----*/
 .mTable {}
 .mTable th {color: white; background-color: #177faf; font-family: 'Roboto-Bold'; font-weight: normal;}
 .mTable th, .mTable td {vertical-align: middle !important}
+.mTable tr td:last-child img {margin: 0 10px 5px 0; width: 18px;}
+.mTable tr td:last-child {overflow: hidden; padding-right: 7px}
+.mTable tr td:last-child a {width: 28px; height: 23px; display: block;}
+.mTable tr td:last-child a:last-child img {margin-right: 0}
+.mTable tr td:last-child a[class^="case-"], div[class*=" case-"] {float: left;}
+.mTable tr td:last-child a:nth-child(4) img, .mTable tr td:last-child a:nth-child(5) img, .mTable tr td:last-child a:nth-child(6) img {margin-bottom: 0}
 
 /*---- Pagination ----*/
 .pagination {margin: 10px 0}
@@ -100,17 +107,18 @@ footer > p:nth-child(2) {margin-left: auto; text-transform: uppercase;}
 .sm_table .sm_row:nth-child(even) {background-color: #ebebeb}
 .sm_row .sm_cell {}
 .sm_row .sm_cell.cell_1 {}
-.sm_row .sm_cell.cell_2, .sm_row .sm_cell.cell_3, .sm_row .sm_cell.cell_4, .sm_row .sm_cell.cell_5 {position: absolute; top: 7px;}
-.sm_row .sm_cell.cell_2 {right: 193px}
-.sm_row .sm_cell.cell_3 {right: 82px}
-.sm_row .sm_cell.cell_4 {right: 46px}
-.sm_row .sm_cell.cell_5 {right: 10px; top: 5px}
-.sm_row .sm_cell.cell_2 button, .sm_row .sm_cell.cell_3 button, .sm_row .sm_cell.cell_4 button, .sm_row .sm_cell.file_dk span {padding: 3px 9px; background-color: #177faf; border-radius: 5px; color: white !important; border: 0}
-.sm_row .sm_cell.cell_4 button, .sm_row .sm_cell.file_dk span {padding: 3px 6px}
-.sm_row .sm_cell.cell_5 i, .sm_row .sm_cell.delete i {font-size: 30px; color: #a94040}
-.sm_row .sm_cell.delete {line-height: 30px; margin-left: 15px}
-.sm_row .sm_cell.c_1, .sm_row .sm_cell.c_2, .sm_row .sm_cell.c_3, .sm_row .sm_cell.c_4 {line-height: 40px; padding-right: 10px}
-.sm_row .sm_cell.c_1 {width: 135px}
-.sm_row .sm_cell.c_2 {width: 330px}
-.sm_row .sm_cell.c_3 {width: 140px}
-.sm_row .sm_cell.c_4 {}
+.sm_row .sm_cell.cell_2, .sm_row .sm_cell.cell_3, .sm_row .sm_cell.cell_4 {position: absolute; top: 11px;}
+.sm_row .sm_cell.cell_2 {right: 80px; width: 100px;}
+.sm_row .sm_cell.cell_2 a {color: #337ab7 !important; text-decoration: underline !important;}
+.sm_row .sm_cell.cell_3 {right: 40px}
+.sm_row .sm_cell.cell_3 label {background-color: #286090; width: 20px; height: 20px; border-radius: 10px; color: white; line-height: 20px; text-align: center;}
+.sm_row .sm_cell.cell_4 {right: 10px}
+.sm_row .sm_cell.cell_4 i {font-size: 20px; color: #bd2125}
+.sm_table .exp {line-height: 40px; margin-top: 30px}
+.sm_table .exp p {float: left; margin-right: 30px}
+.sm_table .exp label {background-color: #286090; width: 20px; height: 20px; border-radius: 10px; color: white; line-height: 20px; text-align: center;}
+.sm_table .exp i {font-size: 20px; color: #bd2125}
+
+/*--- Fake something ---*/
+.fake_textarea {height: 90px; overflow: auto; margin-bottom: 20px}
+.fake_textarea p {margin-bottom: 0}

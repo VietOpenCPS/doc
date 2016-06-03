@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Thêm mới hồ sơ</title>
+    <title>Thông tin hồ sơ</title>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css"  href="css/style.css">
@@ -57,86 +57,93 @@
 	<article>
 		<div class="main two_col row-eq-height">
 			<div class="box col col_main PA0">
-				<div class="head_title">
-					<p>Thêm mới hồ sơ</p>
-				</div>
-				<div class="box_content">
-					<div class="row reverse_row MB10">
-						<div class="col-sm-4">
-							<label>Mã thủ tục:</label>
-							<input type="text" class="form-control" placeholder="308">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#hoso" role="tab" data-toggle="tab">Hồ sơ</a></li>
+					<li role="presentation"><a href="#giayto" role="tab" data-toggle="tab">Giấy tờ</a></li>
+					<li role="presentation"><a href="#hoso_ngoai" role="tab" data-toggle="tab">Hồ sơ ngoài</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="hoso">
+						<div class="row reverse_row MB10">
+							<div class="col-sm-8">
+								<label>Thủ tục hành chính</label>
+								<input type="text" class="form-control" placeholder="Thủ tục abc" disabled>
+							</div>
+							<div class="col-sm-4">
+								<label>Mã thủ tục</label>
+								<input type="text" class="form-control" placeholder="TTHC01" disabled>
+							</div>
 						</div>
-						<div class="col-sm-8">
-							<label>Thủ tục:</label>
-							<input type="text" class="form-control" placeholder="Xác nhận đăng ký thực hiện khuyến mại theo hình thức mang tính may rủi thực hiện trên địa bàn 01 tỉnh, thành phố trực thuộc Trung ương">
+						<div class="row reverse_row MB10">
+							<div class="col-sm-8">
+								<label>Cơ quan thực hiện</label>
+								<input type="text" class="form-control" placeholder="Cơ quan A" disabled>
+							</div>
+							<div class="col-sm-4">
+								<label>Mã cơ quan</label>
+								<input type="text" class="form-control" placeholder="CQA" disabled>
+							</div>
+						</div>
+						<div class="row reverse_row MB10">
+							<div class="col-sm-8">
+								<label>Chủ hồ sơ</label>
+								<input type="text" class="form-control" placeholder="Tên công dân hoặc tổ chức">
+							</div>
+							<div class="col-sm-4">
+								<label>Mã định danh</label>
+								<input type="text" class="form-control" placeholder="06567767">
+							</div>
+						</div>
+						<div class="row reverse_row MB10">
+							<div class="col-sm-12">
+								<label>Địa chỉ</label>
+								<input type="text" class="form-control" placeholder="33 Phố Hàng Phố">
+							</div>
+						</div>
+						<div class="row reverse_row MB10">
+							<div class="col-sm-4">
+								<label>Tỉnh thành</label>
+								<select class="form-control">
+									<option>Hà Nội</option>
+								</select>
+							</div>
+							<div class="col-sm-4">
+								<label>Quận huyện</label>
+								<select class="form-control">
+									<option>Hoàn Kiếm</option>
+								</select>
+							</div>
+							<div class="col-sm-4">
+								<label>Phường xã</label>
+								<select class="form-control">
+									<option>Hàng Mã</option>
+								</select>
+							</div>
+						</div>
+						<div class="row reverse_row MB10">
+							<div class="col-sm-4">
+								<label>Người liên lạc</label>
+								<input type="text" class="form-control" placeholder="Nguyễn Văn A">
+							</div>
+							<div class="col-sm-4">
+								<label>Số điện thoại</label>
+								<input type="text" class="form-control" placeholder="0123456789">
+							</div>
+							<div class="col-sm-4">
+								<label>Email</label>
+								<input type="text" class="form-control" placeholder="abc@gmail.com">
+							</div>
+						</div>
+						<div class="row reverse_row MB10">
+							<div class="col-sm-12">
+								<label>Ghi chú kèm theo</label>
+								<textarea class="form-control" rows="4"></textarea>
+							</div>
 						</div>
 					</div>
-					<div class="row reverse_row MB10">
-						<div class="col-sm-4">
-							<label>Mã cơ quan:</label>
-							<input type="text" class="form-control" placeholder="111">
-						</div>
-						<div class="col-sm-8">
-							<label>Cơ quan:</label>
-							<input type="text" class="form-control" placeholder="Cục Xúc tiến Thương mại">
-						</div>
-					</div>
-					<div class="row reverse_row MB10">
-						<div class="col-sm-4">
-							<label>Mã định danh: <span class="red">(*)</span></label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-sm-8">
-							<label>Chủ hồ sơ: <span class="red">(*)</span></label>
-							<input type="text" class="form-control" placeholder="CÔNG TY TNHH HƯNG VƯỢNG">
-						</div>
-					</div>
-					<div class="row reverse_row MB10">
-						<div class="col-sm-12">
-							<label>Địa chỉ: <span class="red">(*)</span></label>
-							<input type="text" class="form-control">
-						</div>
-					</div>
-					<div class="row reverse_row MB10">
-						<div class="col-sm-4">
-							<label>Tỉnh / Thành phố:</label>
-							<select class="form-control">
-								<option>- Lựa chọn -</option>
-							</select>
-						</div>
-						<div class="col-sm-4">
-							<label>Quận / Huyện:</label>
-							<select class="form-control">
-								<option>- Lựa chọn -</option>
-							</select>
-						</div>
-						<div class="col-sm-4">
-							<label>Phường / Xã:</label>
-							<select class="form-control">
-								<option>- Lựa chọn -</option>
-							</select>
-						</div>
-					</div>
-					<div class="row reverse_row MB10">
-						<div class="col-sm-4">
-							<label>Người liên lạc: <span class="red">(*)</span></label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-sm-4">
-							<label>Số điện thoại liên hệ:</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="col-sm-4">
-							<label>Email liên hệ:</label>
-							<input type="text" class="form-control">
-						</div>
-					</div>
-					<div class="row reverse_row MB10">
-						<div class="col-sm-12">
-							<label>Ghi chú:</label>
-							<textarea class="form-control" rows="4"></textarea>
-						</div>
-					</div>
+					<div role="tabpanel" class="tab-pane" id="giayto">Giấy tờ ...</div>
+					<div role="tabpanel" class="tab-pane" id="hoso_ngoai">Hồ sơ ngoài ...</div>
 				</div>
 			</div>
 			<div class="box col col_sub PA0">
@@ -163,19 +170,19 @@
 					<li>
 						<a href="">
 							<i class="fa fa-check-square-o" aria-hidden="true"></i>
-							<span>Kết quả</span>
+							<span>Kết quả thực hiện</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
 							<i class="fa fa-calendar" aria-hidden="true"></i>
-							<span>Lịch sử</span>
+							<span>Lịch sử giao dịch</span>
 						</a>
 					</li>
 				</ul>
 				<div class="text-center MB15">
-					<button class="btn btn-primary btn-sm">Ghi lại</button>
-					<button class="btn btn-danger btn-sm">Hủy bỏ</button>
+					<button class="btn btn-primary btn-sm">Lưu</button>
+					<button class="btn btn-danger btn-sm">Quay lại</button>
 				</div>
 			</div>
 		</div>
